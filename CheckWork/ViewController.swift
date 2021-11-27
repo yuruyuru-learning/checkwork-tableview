@@ -20,18 +20,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func add() {
-        items.append(fruitsList[Int.random(in: 0..<fruitsList.count)])
+        /* ここに何か書く */
         tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        /* ここに何か書く */
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = items[indexPath.row]
-        return cell!
+        /* ここに何か書く */
     }
 
 }
